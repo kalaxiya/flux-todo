@@ -10,6 +10,10 @@ var TodoList = require('./TodoList');
 var assign = require('object-assign');
 var AppStore = require('../stores/AppStore');
 
+/**
+ * get state from store
+ * @returns {{todos: *}}
+ */
 function getAppState() {
     return {
         todos: AppStore.getAll()

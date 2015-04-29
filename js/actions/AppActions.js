@@ -4,6 +4,10 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
 
 var AppActions = {
+    /**
+     * action to add a todo
+     * @param text
+     */
     add: function( text ) {
         AppDispatcher.dispatch({
             actionType: 'add',
@@ -11,6 +15,10 @@ var AppActions = {
         });
     },
 
+    /**
+     * action to remove a todo
+     * @param id
+     */
     remove: function( id ) {
         AppDispatcher.dispatch({
             actionType: 'remove',
