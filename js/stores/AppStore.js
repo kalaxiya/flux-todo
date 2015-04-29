@@ -9,16 +9,27 @@ var CHANGE_EVENT = 'change';
 
 var _todo = {};
 
+/**
+ * add a todo
+ * @param text
+ */
 function add( text ) {
     var id = ( +new Date() + Math.floor( Math.random() * 999999 ) ).toString(36);
 
     _todo[id] = text;
 }
 
+/**
+ * remove a todo
+ * @param id
+ */
 function remove( id ) {
     delete _todo[id];
 }
 
+/**
+ * creat a store
+ */
 var TodoStore = assign({}, EventEmitter.prototype, {
     getAll: function() {
         return _todo;
@@ -37,6 +48,9 @@ var TodoStore = assign({}, EventEmitter.prototype, {
     }
 });
 
+/**
+ * register the listener
+ */
 AppDispatcher.register(function( action ) {
     var text;
 
