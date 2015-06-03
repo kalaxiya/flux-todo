@@ -1,11 +1,13 @@
 /**
  * Created by linzerui on 15/4/28.
  */
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
-var assign = require('object-assign');
+"use strict";
 
-var CHANGE_EVENT = 'change';
+var AppDispatcher = require( "../dispatcher/AppDispatcher" );
+var EventEmitter = require( "events" ).EventEmitter;
+var assign = require( "object-assign" );
+
+var CHANGE_EVENT = "change";
 
 var _todo = {};
 
@@ -52,15 +54,13 @@ var TodoStore = assign({}, EventEmitter.prototype, {
  * register the listener
  */
 AppDispatcher.register(function( action ) {
-    var text;
-
     switch ( action.actionType ) {
-        case 'add':
+        case "add":
             add( action.text );
             TodoStore.emitChange();
             break;
 
-        case 'remove':
+        case "remove":
             remove( action.id );
             TodoStore.emitChange();
             break;

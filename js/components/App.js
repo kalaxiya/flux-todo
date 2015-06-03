@@ -1,14 +1,14 @@
 /**
  * Created by linzerui on 15/4/29.
  */
-'use strict';
+"use strict";
 
-var React = require('react');
-var AddTodo = require('./AddTodo');
-var TodoList = require('./TodoList');
+var React = require( "react" );
+var AddTodo = require( "./AddTodo" );
+var TodoList = require( "./TodoList" );
 
-var assign = require('object-assign');
-var AppStore = require('../stores/AppStore');
+var assign = require( "object-assign" );
+var AppStore = require( "../stores/AppStore" );
 
 /**
  * get state from store
@@ -22,7 +22,7 @@ function getAppState() {
 
 class App extends React.Component {
     constructor( props ) {
-        super(props);
+        super( props );
         this.state = getAppState();
     }
 

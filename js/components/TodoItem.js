@@ -1,10 +1,10 @@
 /**
  * Created by linzerui on 15/4/29.
  */
-'use strict';
+"use strict";
 
-var React = require('react');
-var AppActions = require('../actions/AppActions');
+var React = require( "react" );
+var AppActions = require( "../actions/AppActions" );
 
 class TodoItem extends React.Component {
     handleRemove() {

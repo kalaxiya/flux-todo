@@ -1,10 +1,10 @@
 /**
  * Created by linzerui on 15/4/29.
  */
-'use strict';
+"use strict";
 
-var React = require('react');
-var AppActions = require('../actions/AppActions');
+var React = require( "react" );
+var AppActions = require( "../actions/AppActions" );
 
 class AddTodo extends React.Component {
     handleAdd() {
@@ -14,7 +14,7 @@ class AddTodo extends React.Component {
         }
 
         AppActions.add( text );
-        React.findDOMNode( this.refs.add ).value = '';
+        React.findDOMNode( this.refs.add ).value = "";
     }
 
     render() {

@@ -1,5 +1,5 @@
 {
-  "name": "z",
+  "name": "todo",
   "version": "1.0.0",
   "description": "z with react",
   "main": "app.js",
@@ -13,7 +13,17 @@
     "flux": "^2.0.3",
     "jsx-loader": "^0.13.2",
     "object-assign": "^2.0.0",
-    "react": "^0.13.2",
-    "reactify": "^1.1.0"
-  }
+    "react": "^0.13.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linzerui/flux-todo.git"
+  },
+  "keywords": [
+    "flux"
+  ],
+  "bugs": {
+    "url": "https://github.com/linzerui/flux-todo/issues"
+  },
+  "homepage": "https://github.com/linzerui/flux-todo"
 }

@@ -1,7 +1,9 @@
 /**
  * Created by linzerui on 15/4/28.
  */
-var AppDispatcher = require('../dispatcher/AppDispatcher');
+"use strict";
+
+var AppDispatcher = require( "../dispatcher/AppDispatcher" );
 
 var AppActions = {
     /**
@@ -10,7 +12,7 @@ var AppActions = {
      */
     add: function( text ) {
         AppDispatcher.dispatch({
-            actionType: 'add',
+            actionType: "add",
             text: text
         });
     },
@@ -21,7 +23,7 @@ var AppActions = {
      */
     remove: function( id ) {
         AppDispatcher.dispatch({
-            actionType: 'remove',
+            actionType: "remove",
             id: id
         });
     }
