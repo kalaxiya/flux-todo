@@ -6,4 +6,6 @@ todo example with flux. use webpack builds the bundle.
 
     $ npm install
 
+then build the bundle:
+
     $ webpack
